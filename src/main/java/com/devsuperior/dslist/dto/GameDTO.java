@@ -6,7 +6,7 @@ import com.devsuperior.dslist.entities.Game;
 
 public class GameDTO {
 
-	private long id;
+	private Long id;
 	private String title;
 	private Integer year;
 	private String genre;
@@ -15,20 +15,19 @@ public class GameDTO {
 	private String imgUrl;
 	private String shortDescription;
 	private String longDescription;
-
+	
 	public GameDTO() {
-			
 	}
 	
 	public GameDTO(Game entity) {
 		BeanUtils.copyProperties(entity, this);
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -95,6 +94,4 @@ public class GameDTO {
 	public void setLongDescription(String longDescription) {
 		this.longDescription = longDescription;
 	}
-	
-	
 }
